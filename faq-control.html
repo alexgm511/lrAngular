@@ -1,0 +1,40 @@
+						<div class="panel panel-default">
+						<div class="header clearfix">
+							<nav>
+								<ul class="nav nav-pills nav-stacked">
+									<li role="presentation" ng-class="{ active:faq.isSelected(1) }">
+										<a href ng-click="faq.selectTab(1)">Does the LandRider come fully assembled?</a>
+										<div class="panel panel-default" ng-show="faq.isSelected(1)">
+											<div class="panel-body">
+												The LandRider comes 95% assembled! Once you've removed the packing material, you can assemble your LandRider in less than 15 minutes using the enclosed multi-tool! Simply insert the seat and handlebars into the frame, screw on the pedals, attach the front wheel and you are ready to ride!
+											</div>
+										</div>
+									</li>
+									<li role="presentation" ng-class="{ active:faq.isSelected(2) }">
+										<a href ng-click="faq.selectTab(2)">Assembly Instructions</a>
+										<div class="panel panel-default" ng-show="faq.isSelected(2)">
+											<div class="panel-body">
+												<assembly-control></assembly-control>
+											</div>
+										</div>
+									</li>
+									<li role="presentation" ng-class="{ active:faq.isSelected(3) }">
+										<a href ng-click="faq.selectTab(3)">Does the LandRider require special maintenance?</a>
+										<div class="panel panel-default" ng-show="faq.isSelected(3)">
+											<div class="panel-body">
+												As with any bicycle, you should have it serviced regularly to prevent damage or unnecessary wear and tear on the moving mechanical parts. Most bike shops charge $30 to $40 for a complete tune-up. See Owner's Manual for service recommendations.
+											</div>
+										</div>
+									</li>
+									<li role="presentation" ng-class="{ active:faq.isSelected(4) }">
+										<a href ng-click="faq.selectTab(4)">What if I need service for my LandRider?</a>
+										<div class="panel panel-default" ng-show="faq.isSelected(4)">
+											<div class="panel-body">
+												Simply call 1-800-945-5335 and ask for a Technical Service Representative. If we can't help you via telephone or e-mail, we'll gladly refer you to one of the bicycle shops in our nationwide network near you for personalized assistance!
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						</div>

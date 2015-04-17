@@ -1,0 +1,83 @@
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<h3 class="panel-title">Landrider Features</h3>
+							</div>
+							<div class="panel-body">
+								
+								<div class="panel panel-default panel-info" ng-show="feature.items[0]">
+									<div class="panel-heading text-center">
+										<h3 class="panel-title">Comfort Seat & Suspension <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
+									</div>
+									<div class="panel-body">
+										<img class="img-responsive" src="images/feature1c.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+										<p>The suspension seat post provides 1-inch travel to absorb shock. Women have a seat that's been widened to provide more support and men will appreciate our center flex indent, which provides comfort as well as protection.</p>
+										</div>
+								</div>
+									
+								<div class="panel panel-default panel-info" ng-show="feature.items[1]">
+									<div class="panel-heading text-center">
+										<h3 class="panel-title">Adjustable Handlebars <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
+									</div>
+									<div class="panel-body">
+										<img class="img-responsive" src="images/feature2b.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+										<p>The height and angle of the LandRider's handlebars are fully adjustable for upright and ergonomically correct riding position for the ultimate in comfort. The shock absorbing front forks make rides more comfortable and the direct pull linear brakes assist in bringing you to a smooth and precise stop.</p>
+										</div>
+								</div>
+									
+								<div class="panel panel-default panel-info" ng-show="feature.items[2]">
+									<div class="panel-heading text-center">
+										<h3 class="panel-title">Patented AutoShift <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
+									</div>
+									<div class="panel-body">
+										<img class="img-responsive" src="images/feature3a.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+										<p>The AutoShift has a flywheel that opens up as you pedal, as it opens it begins to change gears automatically. When you go faster it continues changing gears up to the seventh gear. Then as you slow down it will downshift all the way back to first gear. You don't have to worry about changing gears, you can just ride and enjoy the scenery!</p>
+										</div>
+								</div>
+									
+								<div class="panel panel-default panel-info" ng-show="feature.items[3]">
+									<div class="panel-heading text-center">
+										<h3 class="panel-title">Alloy Pedal Crank Arms <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
+									</div>
+									<div class="panel-body">
+										<img class="img-responsive" src="images/feature4c.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+										<p>The LandRider comes with strong, lightweight alloy pedal crank arms, non-slip heavy duty design pedals equipped with safety reflectors for optimal visibilty in all conditions.</p>
+										</div>
+								</div>
+									
+								<div class="panel panel-default panel-info" ng-show="feature.items[4]">
+									<div class="panel-heading text-center">
+										<h3 class="panel-title">Quick Release <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
+									</div>
+									<div class="panel-body">
+										<img class="img-responsive" src="images/feature5c.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+										<p>The front wheel of the LandRider utilizes a convenient quick release system for fast and easy storage in a closet or basement and for loading into your car.</p>
+										</div>
+								</div>
+									
+								<p>Click or tap on one of the sections of the bike to learn about the great features of the LandRider bicycle.</p>
+								<div ng-show="feature.imageShow">
+								<img ng-click="feature.setItem(0)" src="images/feature1b.jpg" alt="Comfort Seat &amp; Suspension" style="width:48%"><img ng-click="feature.setItem(1)" src="images/feature2c.jpg" alt="Adjustable Handlebars" style="width:48%"><br>
+								<img ng-click="feature.setItem(2)" class="popphoto" src="images/feature3c.jpg" alt="Patented AutoShift" style="width:32%"><img ng-click="feature.setItem(3)" class="popphoto" src="images/feature4b.jpg" alt="Alloy Pedal Crank Arms" style="width:32%"><img ng-click="feature.setItem(4)" class="popphoto" src="images/feature5b.jpg" alt="Quick Release Mechanism" style="width:32%">
+								</div>
+							</div>
+						</div>
+						<!--div id="feature1">
+							<div class="modal fade" ng-show="feature.getModal(1)" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Comfort Seat & Suspension</h4>
+								  </div>
+								  <div class="modal-body">
+									<img class="img-responsive" src="images/feature1c.jpg" width="100%" alt="Comfort Seat &amp; Suspension">
+									<p>The suspension seat post provides 1-inch travel to absorb shock. Women have a seat that's been widened to provide more support and men will appreciate our center flex indent, which provides comfort as well as protection.</p>
+								  </div>
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								  </div>
+								</div><!-- /.modal-content >
+							  </div><!-- /.modal-dialog >
+							</div><!-- /.modal -->						
+						<!--/div-->

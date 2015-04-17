@@ -1,0 +1,79 @@
+[
+		{
+			"sku": "LRD14-F04MF", 
+			"Type": 1, 
+			"Description": "14in. Man's Deluxe", 
+			"SmImage": "images/Deluxe17-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD17-F04MF", 
+			"Type": 1, 
+			"Description": "17in. Man's Deluxe", 
+			"SmImage": "images/Deluxe17-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD19-F04MF", 
+			"Type": 1, 
+			"Description": "19in. Man's Deluxe", 
+			"SmImage": "images/Deluxe17-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD22-F04MF", 
+			"Type": 1, 
+			"Description": "22in. Man's Deluxe",
+			"SmImage": "images/Deluxe17-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD12-F04WF", 
+			"Type": 1, 
+			"Description": "12in. Woman's Deluxe", 
+			"SmImage": "images/Deluxe15st-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD15-F04WF", 
+			"Type": 1, 
+			"Description": "15in. Woman's Deluxe", 
+			"SmImage": "images/Deluxe15st-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "LRD17-F04WF", 
+			"Type": 1, 
+			"Description": "17in. Woman's Deluxe", 
+			"SmImage": "images/Deluxe17w-sm.png", 
+			"Price": 399.85
+		},
+		{
+			"sku": "AC400CH", 
+			"Type": 2, 
+			"Description": "Rear Rack", 
+			"SmImage": "images/rearRack-sm.png", 
+			"Price": 59.95
+		},
+		{
+			"sku": "LRACKIT2", 
+			"Type": 2, 
+			"Description": "LandRider Accessory Kit", 
+			"SmImage": "images/kit-1-sm.png", 
+			"Price": 39.95
+		},
+		{
+			"sku": "AC600", 
+			"Type": 2, 
+			"Description": "Alloy Floor Pump", 
+			"SmImage": "images/floorPump-sm.png", 
+			"Price": 69.95
+		},
+		{
+			"sku": "AC510BK", 
+			"Type": 2, 
+			"Description": "Cyclo-Computer", 
+			"SmImage": "images/cycloComputer-sm.png", 
+			"Price": 44.95
+		}
+	]
