@@ -3,13 +3,14 @@
 	
 	app.controller('StoreController', ['$http', function($http) {
 		var store = this;
+		store.qty = [1,2,3,4,5];
 		store.products = [];
 		$http.get('/inventory.json').
 		success(function(data){
 			store.products = data;
 		});	
 	}]);
-
+	-
 	app.directive('topBar', function() {
 		return {
 			restrict: 'E',
@@ -46,10 +47,31 @@
 		};
 	});	
 
+	app.directive('bikeDisplay', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'bike-display.html'
+		};
+	});	
+	
+	app.directive('accessoryDisplay', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'accessory-display.html'
+		};
+	});	
+	
 	app.directive('contactUs', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'contact-us.html'
+		};
+	});	
+
+	app.directive('productListing', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'product-listing.html'
 		};
 	});	
 

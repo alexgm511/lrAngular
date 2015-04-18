@@ -6,25 +6,22 @@
 										<a href ng-click="panels.selectTab(1)">Home</a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(2) }">
-										<a id="prods" class="dropdown-toggle" data-toggle="dropdown" href  ng-click="panels.selectTab(2) role="button" aria-expanded="false">Bikes & Accessories <span class="glyphicon glyphicon-chevron-down"></span></a>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#">Men's Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Women's Small Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Women's Large Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Bike Accessories <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-											</ul>
+										<a href ng-click="panels.selectTab(2)">Bicycles </a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(3) }">
-										<a href ng-click="panels.selectTab(3)">Features</a>
+										<a href ng-click="panels.selectTab(3)">Accessories </a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(4) }">
-										<a href ng-click="panels.selectTab(4)">FAQ</a>
+										<a href ng-click="panels.selectTab(4)">Features</a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(5) }">
-										<a href ng-click="panels.selectTab(5)">Contact Us</a>
+										<a href ng-click="panels.selectTab(5)">FAQ</a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(6) }">
-										<a href ng-click="panels.selectTab(6)">Cart</a>
+										<a href ng-click="panels.selectTab(6)">Contact Us</a>
+									</li>
+									<li role="presentation" ng-class="{ active:panels.isSelected(7) }">
+										<a href ng-click="panels.selectTab(7)">Cart</a>
 									</li>
 								</ul>
 							</nav>
@@ -35,23 +32,21 @@
 							<discover-autoshift></discover-autoshift>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(2)">
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#">Men's Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Women's Small Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Women's Large Deluxe AutoShift <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-												<li><a href="#">Bike Accessories <span class="glyphicon glyphicon-chevron-right"></span></a></li>
-											</ul>
+							<bike-display></bike-display>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(3)">
-							<feature-control></feature-control>
+							<accessory-display></accessory-display>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(4)">
-							<faq-control></faq-control>
+							<feature-control></feature-control>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(5)">
-							<contact-us></contact-us>
+							<faq-control></faq-control>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(6)">
+							<contact-us></contact-us>
+						</div>
+						<div class="panel" ng-show="panels.isSelected(7)">
 
 						</div>
 						

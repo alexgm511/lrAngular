@@ -1,79 +1,131 @@
 [
 		{
-			"sku": "LRD14-F04MF", 
-			"Type": 1, 
-			"Description": "14in. Man's Deluxe", 
-			"SmImage": "images/Deluxe17-sm.png", 
-			"Price": 399.85
+			"type": 1, 
+			"title": "Man's Deluxe AutoShift", 
+			"description": "The LandRider Deluxe delivers a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame design. Also features a comfort saddle with shock absorbing seat post, 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
+			"image": "images/Deluxe17.jpg", 
+			"smImage": "images/Deluxe17-sm.png", 
+			"sizes": [
+				{
+					"sku": "LRD14-F04MF",
+					"skuDescription": "14in. Man's Deluxe",
+					"price": 399.85,
+					"count": 15
+				},
+				{
+					"sku": "LRD17-F04MF",
+					"skuDescription": "17in. Man's Deluxe",
+					"price": 399.85,
+					"count": 15
+				},
+				{
+					"sku": "LRD19-F04MF",
+					"skuDescription": "19in. Man's Deluxe",
+					"price": 399.85,
+					"count": 15
+				},
+				{
+					"sku": "LRD22-F04MF",
+					"skuDescription": "22in. Man's Deluxe",
+					"price": 399.85,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD17-F04MF", 
-			"Type": 1, 
-			"Description": "17in. Man's Deluxe", 
-			"SmImage": "images/Deluxe17-sm.png", 
-			"Price": 399.85
+			"type": 1, 
+			"title": "Woman's Small Deluxe AutoShift", 
+			"description": "With features like a step-thru frame and a wider saddle mounted on a shock absorbing seat post the LandRider Women's Deluxe is truly a comfort bike. Enjoy a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame. Also features 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
+			"image": "images/DeluxeStepThru15.jpg", 
+			"smImage": "images/Deluxe17-sm.png", 
+			"sizes": [
+				{
+					"sku": "LRD12-F04WF",
+					"skuDescription": "12in. Woman's Deluxe",
+					"price": 399.85,
+					"count": 15
+				},
+				{
+					"sku": "LRD15-F04WF",
+					"skuDescription": "15in. Woman's Deluxe",
+					"price": 399.85,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD19-F04MF", 
-			"Type": 1, 
-			"Description": "19in. Man's Deluxe", 
-			"SmImage": "images/Deluxe17-sm.png", 
-			"Price": 399.85
+			"type": 1, 
+			"title": "Woman's Large Deluxe AutoShift", 
+			"description": "The LandRider Deluxe delivers a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame design. Also features a wider comfort saddle with shock absorbing seat post, 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
+			"image": "images/Deluxe_W_17.jpg", 
+			"smImage": "images/Deluxe17w-sm.png", 
+			"sizes": [
+				{
+					"sku": "LRD17-F04WF",
+					"skuDescription": "17in. Woman's Deluxe",
+					"price": 399.85,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD22-F04MF", 
-			"Type": 1, 
-			"Description": "22in. Man's Deluxe",
-			"SmImage": "images/Deluxe17-sm.png", 
-			"Price": 399.85
+			"type": 2, 
+			"title": "Rear Bike Rack", 
+			"description": "Our unique fully adjustable mounting system and the champagne color make our aluminum alloy rack specially suited to fit every LandRider model. The 15 in. by 5.25 in. top has a 55 pound load capacity, plus it includes red reflector for the rear of the rack. Add versatility with our customized rack bags - Rack-Top Bag, Pannier and Shopping Bag.", 
+			"image": "images/rearRack.jpg", 
+			"smImage": "images/rearRack-sm.png", 
+			"sizes": [
+				{
+					"sku": "AC400CH",
+					"skuDescription": "Rear Bike Rack",
+					"price": 59.95,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD12-F04WF", 
-			"Type": 1, 
-			"Description": "12in. Woman's Deluxe", 
-			"SmImage": "images/Deluxe15st-sm.png", 
-			"Price": 399.85
+			"type": 2, 
+			"title": "LandRider Accessory Kit", 
+			"description": "An exceptional bundle of bicycle accessories for our LandRider owners. Each kit includes a water bottle with an alloy holder, a rear safety light, air pump and holder and a halogen front headlight. Batteries included.", 
+			"image": "images/kit-1.jpg", 
+			"smImage": "images/kit-1-sm.png", 
+			"sizes": [
+				{
+					"sku": "LRACKIT2",
+					"skuDescription": "LandRider Accessory Kit",
+					"price": 39.95,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD15-F04WF", 
-			"Type": 1, 
-			"Description": "15in. Woman's Deluxe", 
-			"SmImage": "images/Deluxe15st-sm.png", 
-			"Price": 399.85
+			"type": 2, 
+			"title": "Alloy Floor Pump", 
+			"description": "From the world's largest pump manufacturer, we bring you our Alloy Floor Pump. It comes with an easy-to-read top-mounted digital pressure gauge and a dual head to fit Schrader and Presta valves, the two most commonly used types of bicycle tire valves.", 
+			"image": "images/floorPump.jpg", 
+			"smImage": "images/floorPump-sm.png", 
+			"sizes": [
+				{
+					"sku": "AC600",
+					"skuDescription": "Alloy Floor Pump",
+					"price": 69.95,
+					"count": 15
+				}
+			]
 		},
 		{
-			"sku": "LRD17-F04WF", 
-			"Type": 1, 
-			"Description": "17in. Woman's Deluxe", 
-			"SmImage": "images/Deluxe17w-sm.png", 
-			"Price": 399.85
-		},
-		{
-			"sku": "AC400CH", 
-			"Type": 2, 
-			"Description": "Rear Rack", 
-			"SmImage": "images/rearRack-sm.png", 
-			"Price": 59.95
-		},
-		{
-			"sku": "LRACKIT2", 
-			"Type": 2, 
-			"Description": "LandRider Accessory Kit", 
-			"SmImage": "images/kit-1-sm.png", 
-			"Price": 39.95
-		},
-		{
-			"sku": "AC600", 
-			"Type": 2, 
-			"Description": "Alloy Floor Pump", 
-			"SmImage": "images/floorPump-sm.png", 
-			"Price": 69.95
-		},
-		{
-			"sku": "AC510BK", 
-			"Type": 2, 
-			"Description": "Cyclo-Computer", 
-			"SmImage": "images/cycloComputer-sm.png", 
-			"Price": 44.95
+			"type": 2, 
+			"title": "Cyclo-Computer", 
+			"description": "Our easy to use and install cyclo-computer features seven functions: current speed, total distance, trip distance, average speed, maximum speed, elapsed time and a 12 hour clock.", 
+			"image": "images/cycloComputer.jpg", 
+			"smImage": "images/cycloComputer-sm.png", 
+			"sizes": [
+				{
+					"sku": "AC510BK",
+					"skuDescription": "Cyclo-Computer",
+					"price": 44.95,
+					"count": 15
+				}
+			]
 		}
 	]
