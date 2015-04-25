@@ -1,16 +1,57 @@
 (function() { // javascript is wrapped in a closure (good habit.)
 	var app = angular.module('lrStore', [ ]);
 	
-	app.controller('StoreController', ['$http', function($http) {
+	app.controller('StoreController', ['$http', '$scope', '$timeout', function($http, $scope, $timeout) {
 		var store = this;
-		store.qty = [1,2,3,4,5];
 		store.products = [];
 		$http.get('/inventory.json').
-		success(function(data){
-			store.products = data;
+			success(function(data){
+				store.products = data;
 		});	
+		
+		$scope.myQty = 1;
+		$scope.mySize;
+		$scope.myPrice;
+		$scope.myImg;
+		
+		store.showMsg = false;
+		store.showMsgNow = function() {
+			store.showMsg = !store.showMsg;
+		};
+		
+		
+		store.invoice = {
+			items: [
+			]
+		};
+		store.addItem = function(model, qty, cost, myImg) {
+			store.invoice.items.push({
+				img: myImg,
+				item: model,
+				quantity: qty,
+				price: cost
+			});
+			var myElem = angular.element('#cartTab');
+			$timeout(function() {
+				angular.element(myElem).triggerHandler('click');
+			}, 0);			
+		};
+		
+		store.removeItem = function(index) {
+			store.invoice.items.splice(index, 1);
+		};
+		
+		store.total = function() {
+			var total = 0;
+			angular.forEach(store.invoice.items, function(item) {
+				total += item.quantity * item.price;
+			})
+
+			return total;
+		}
+
 	}]);
-	-
+	
 	app.directive('topBar', function() {
 		return {
 			restrict: 'E',
@@ -18,6 +59,20 @@
 		};
 	});	
 
+	app.directive('myCart', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'shopping-cart.html'
+		};
+	});	
+
+	app.directive('myProduct', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'product-form.html'
+		};
+	});		
+	
 	app.directive('discoverAutoshift', function() {
 		return {
 			restrict: 'E',
@@ -32,7 +87,7 @@
 			controllerAs: 'discover'
 		};
 	});	
-
+	
 	app.directive('topImage', function() {
 		return {
 			restrict: 'E',
@@ -157,5 +212,5 @@
 			controllerAs: 'panels'
 		};
 	});	
-	
+
 })();

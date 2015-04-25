@@ -1,0 +1,24 @@
+						<div class="panel panel-default">
+							<div class="panel-heading text-center">
+								<div class="header clearfix">
+									<nav>
+										<ul class="nav nav-pills">
+											<li role="presentation" ng-class="{ active:prods.isSelected(1) }">
+												<a href ng-click="prods.selectTab(1)">Men's Deluxe</a>
+											</li>
+											<li role="presentation" ng-class="{ active:prods.isSelected(2) }">
+												<a href ng-click="prods.selectTab(2)">Women's Small Deluxe</a>
+											</li>
+											<li role="presentation" ng-class="{ active:prods.isSelected(3) }">
+												<a href ng-click="prods.selectTab(3)">Women's large Deluxe</a>
+											</li>
+											<li role="presentation" ng-class="{ active:prods.isSelected(4) }">
+												<a href ng-click="prods.selectTab(4)">Bike Accessories</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+							<div class="panel-body">
+								<product-display></product-display>
+							</div>
+						</div>

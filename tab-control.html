@@ -21,7 +21,7 @@
 										<a href ng-click="panels.selectTab(6)">Contact Us</a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(7) }">
-										<a href ng-click="panels.selectTab(7)">Cart</a>
+										<a id="cartTab" href ng-click="panels.selectTab(7)">Cart</a>
 									</li>
 								</ul>
 							</nav>
@@ -47,6 +47,6 @@
 							<contact-us></contact-us>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(7)">
-
+							<my-cart></my-cart>
 						</div>
 						
