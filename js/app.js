@@ -4,7 +4,7 @@
 	app.controller('StoreController', ['$http', '$scope', '$timeout', function($http, $scope, $timeout) {
 		var store = this;
 		store.products = [];
-		$http.get('/inventory.json').
+		$http.get('inventory.json').
 			success(function(data){
 				store.products = data;
 		});	
@@ -18,7 +18,7 @@
 		store.showMsgNow = function() {
 			store.showMsg = !store.showMsg;
 		};
-		
+
 		
 		store.invoice = {
 			items: [
@@ -35,6 +35,14 @@
 			$timeout(function() {
 				angular.element(myElem).triggerHandler('click');
 			}, 0);			
+		};
+		
+		store.cartOn = function() {
+			if (store.invoice.items.length > 0) {
+				return true;
+			} else {
+				return false;
+			}
 		};
 		
 		store.removeItem = function(index) {

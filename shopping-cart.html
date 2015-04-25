@@ -1,44 +1,47 @@
-			<div class="panel panel-default">
-				<div class="panel-heading text-center">
-					<h3 class="panel-title">Shopping Cart</h3>
-				</div>
-				<div class="panel-body">
-				
-				<table class="table">
-					<tr>						
-						<th></th>
-						<th>Model</th>
-						<th>Qty</th>
-						<th>Price</th>
-						<th>Total</th>
-						<th></th>
-					</tr>
-					
-					<tr ng-repeat="item in store.invoice.items">
-						<td ng:model="item.img"><img class="img-responsive" src="{{item.img}}"</td>
-						<td ng:model="item.item">{{item.item}}</td>
-						<td ng:model="item.quantity">{{item.quantity}}</td>
-						<td ng:model="item.price">{{item.price}}</td>
-						<td>{{item.quantity * item.price | currency}}</td>
-						<td>
-							[<a href ng-click="store.removeItem($index)">X</a>]
-						</td>
-					</tr>
-					<div ng-show="store.total()">
+		<div class="panel panel-default">
+			<div class="panel-heading text-center">
+				<h3 class="panel-title">Shopping Cart</h3>
+			</div>
+			<div class="panel-body">
+			<div ng-show="store.cartOn()">
+				<div class="table-responsive">
+					<table class="table">
+						<tr>						
+							<th></th>
+							<th>Model</th>
+							<th>Qty</th>
+							<th>Price</th>
+							<th>Total</th>
+							<th></th>
+						</tr>
+						
+						<tr ng-repeat="item in store.invoice.items">
+							<td ng:model="item.img"><img class="img-responsive" src="{{item.img}}"</td>
+							<td ng:model="item.item">{{item.item}}</td>
+							<td ng:model="item.quantity">{{item.quantity}}</td>
+							<td ng:model="item.price">{{item.price}}</td>
+							<td>{{item.quantity * item.price | currency}}</td>
+							<td>
+								[<a href ng-click="store.removeItem($index)">X</a>]
+							</td>
+						</tr>
 						<tr>
 							<td></td>
 							<td><strong>Total:</strong></td>
 							<td><strong>{{store.total() | currency}}</strong></td>
 						</tr>
-					</div> 
-				</table>
-				
+					</table>
+				</div>
 				<button type="button" class="btn btn-primary btn-block" ng-click="store.showMsgNow()">Go to Checkout</button>
 
 				<div ng-show="store.showMsg" class="alert alert-info alert-dismissible" role="alert">
 				  <button type="button" class="close" ng-click="store.showMsgNow()"><span aria-hidden="true">&times;</span></button>
 				  <strong>Sorry!</strong> This site is still under development.
 				</div>
-				
-				</div>
 			</div>
+			<div ng-hide="store.cartOn()">
+				<h3 class="text-center">Cart is empty.</h3>
+			</div>
+			
+			</div>
+		</div>
