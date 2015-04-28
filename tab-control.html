@@ -6,10 +6,10 @@
 										<a href ng-click="panels.selectTab(1)">Home</a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(2) }">
-										<a href ng-click="panels.selectTab(2)">Bicycles </a>
+										<a href ng-click="setType(1); panels.selectTab(2)">Bicycles </a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(3) }">
-										<a href ng-click="panels.selectTab(3)">Accessories </a>
+										<a href ng-click="setType(2); panels.selectTab(3)">Accessories </a>
 									</li>
 									<li role="presentation" ng-class="{ active:panels.isSelected(4) }">
 										<a href ng-click="panels.selectTab(4)">Features</a>
@@ -32,10 +32,10 @@
 							<discover-autoshift></discover-autoshift>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(2)">
-							<bike-display></bike-display>
+							<product-display type="1"></product-display>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(3)">
-							<accessory-display></accessory-display>
+							<product-display type="2"></product-display>
 						</div>
 						<div class="panel" ng-show="panels.isSelected(4)">
 							<feature-control></feature-control>

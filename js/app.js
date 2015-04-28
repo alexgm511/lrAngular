@@ -110,17 +110,11 @@
 		};
 	});	
 
-	app.directive('bikeDisplay', function() {
+	app.directive('productDisplay', function() {
 		return {
-			restrict: 'E',
-			templateUrl: 'bike-display.html'
-		};
-	});	
-	
-	app.directive('accessoryDisplay', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'accessory-display.html'
+			templateUrl: function(elem, attr) {
+				return 'product-display'+attr.type+'.html'
+			}
 		};
 	});	
 	

@@ -1,5 +1,7 @@
+				<a name="{{product.sizes[0].sku}}"></a>
+				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3>{{product.title}}</h3>
+						<a class="btn btn-default btn-xs pull-right" href="#top" role="button"><span class="glyphicon glyphicon-chevron-up"></span> Top</a><h3 class="panel-title">{{product.title}}</h3>
 					</div>
 					<div class="panel-body">
 						<img ng-src="{{product.image}}" class="img-responsive"></img>
@@ -27,3 +29,4 @@
 							<button type="button" class="btn btn-primary btn-block" ng-click="store.addItem(mySize, myQty, myPrice, mySmImg)">Add to Cart</button>
 						</form>
 					</div>
+				</div>

@@ -1,0 +1,11 @@
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="btn-group" role="group" aria-label="Product-select">
+								<a ng-repeat="product in store.products | filter: { type: '1' }" class="btn btn-default btn-xs" href="#{{product.sizes[0].sku}}">{{product.title}}</a>
+							</div>
+						</div>
+					</div>
+
+					<div ng-repeat="product in store.products | filter: { type: '1' }">
+						<my-product></my-product>
+					</div>
