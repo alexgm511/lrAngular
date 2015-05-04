@@ -3,27 +3,34 @@
 	
 	app.controller('StoreController', ['$http', '$scope', '$timeout', function($http, $scope, $timeout) {
 		var store = this;
+		
+		// Import products from json file:
 		store.products = [];
 		$http.get('inventory.json').
 			success(function(data){
 				store.products = data;
 		});	
 		
+		// Initialize product page variables:
 		$scope.myQty = 1;
 		$scope.mySize;
 		$scope.myPrice;
 		$scope.myImg;
 		
+		// Toggle Not ready message:
 		store.showMsg = false;
 		store.showMsgNow = function() {
 			store.showMsg = !store.showMsg;
 		};
 
-		
+		// Initialize Invoice items object:
 		store.invoice = {
 			items: [
 			]
 		};
+		
+		// Add item to Store invoice and switch to cart by triggering click event.
+		// Click event is wrapped in $timeout to break out of angularjs $apply:
 		store.addItem = function(model, qty, cost, myImg) {
 			store.invoice.items.push({
 				img: myImg,
@@ -37,6 +44,7 @@
 			}, 0);			
 		};
 		
+		// Test for items in Cart or notify that cart is empty.
 		store.cartOn = function() {
 			if (store.invoice.items.length > 0) {
 				return true;
@@ -45,10 +53,12 @@
 			}
 		};
 		
+		// Delete item from Invoice.items to remove from cart
 		store.removeItem = function(index) {
 			store.invoice.items.splice(index, 1);
 		};
 		
+		// Figure out total by adding items on Invoice.items
 		store.total = function() {
 			var total = 0;
 			angular.forEach(store.invoice.items, function(item) {
@@ -60,27 +70,31 @@
 
 	}]);
 	
+	// Directive with top most bar
 	app.directive('topBar', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'top-bar.html'
 		};
 	});	
-
+	
+	// Directive with cart code
 	app.directive('myCart', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'shopping-cart.html'
 		};
 	});	
-
+	
+	// Directive with all product display code
 	app.directive('myProduct', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'product-form.html'
 		};
 	});		
-	
+
+	// Directive to display autoshift details
 	app.directive('discoverAutoshift', function() {
 		return {
 			restrict: 'E',
@@ -96,6 +110,7 @@
 		};
 	});	
 	
+	// Directive with the big welcome image
 	app.directive('topImage', function() {
 		return {
 			restrict: 'E',
@@ -103,13 +118,15 @@
 		};
 	});	
 	
+	// Directive with footer information
 	app.directive('pageFooter', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'page-footer.html'
 		};
 	});	
-
+	
+	// Directive that selects which product page to display
 	app.directive('productDisplay', function() {
 		return {
 			templateUrl: function(elem, attr) {
@@ -118,13 +135,15 @@
 		};
 	});	
 	
+	// Directive with contact info code
 	app.directive('contactUs', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'contact-us.html'
 		};
 	});	
-
+	
+	// Directive with all product tabs
 	app.directive('productListing', function() {
 		return {
 			restrict: 'E',
@@ -132,6 +151,8 @@
 		};
 	});	
 
+	// Directive with feature display code
+	// clicked item is set to true, all others to false 
 	app.directive('featureControl', function() {
 		return {
 			restrict: 'E',
@@ -160,7 +181,8 @@
 			
 		};
 	});	
-
+	
+	// Directive with FAQ tabs code
 	app.directive('faqControl', function() {
 		return {
 			restrict: 'E',
@@ -178,7 +200,8 @@
 			controllerAs: 'faq'
 		};
 	});	
-
+	
+	// Directive with assembly tab code
 	app.directive('assemblyControl', function() {
 		return {
 			restrict: 'E',
@@ -196,7 +219,8 @@
 			controllerAs: 'assemble'
 		};
 	});	
-
+	
+	// Directive with main tab code
 	app.directive('tabControl', function() {
 		return {
 			restrict: 'E',
