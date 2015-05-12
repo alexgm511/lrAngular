@@ -1,0 +1,47 @@
+[
+	{
+		"title": "Comfort Seat & Suspension ",
+		"mainImage": "images/feature1d.jpg",
+		"mainImageAlt": "Comfort Seat &amp; Suspension",
+		"mainImageWidth": "48%",
+		"image": "images/feature1c.jpg",
+		"imageAlt": "Comfort Seat &amp; Suspension",
+		"description": "The suspension seat post provides 1-inch travel to absorb shock. Women have a seat that's been widened to provide more support and men will appreciate our center flex indent, which provides comfort as well as protection."
+	},
+	{
+		"title": "Adjustable Handlebars ",
+		"mainImage": "images/feature2d.jpg",
+		"mainImageAlt": "Adjustable Handlebars",
+		"mainImageWidth": "48%",
+		"image": "images/feature2b.jpg",
+		"imageAlt": "Adjustable Handlebars",
+		"description": "The height and angle of the LandRider's handlebars are fully adjustable for upright and ergonomically correct riding position for the ultimate in comfort. The shock absorbing front forks make rides more comfortable and the direct pull linear brakes assist in bringing you to a smooth and precise stop."
+	},
+	{
+		"title": "Patented AutoShift ",
+		"mainImage": "images/feature3d.jpg",
+		"mainImageAlt": "Patented AutoShift",
+		"mainImageWidth": "32%",
+		"image": "images/feature3a.jpg",
+		"imageAlt": "Patented AutoShift",
+		"description": "The AutoShift has a flywheel that opens up as you pedal, as it opens it begins to change gears automatically. When you go faster it continues changing gears up to the seventh gear. Then as you slow down it will down-shift all the way back to first gear. You don't have to worry about changing gears, you can just ride and enjoy the scenery!"
+	},
+	{
+		"title": "Alloy Pedal Crank Arms ",
+		"mainImage": "images/feature4d.jpg",
+		"mainImageAlt": "Alloy Pedal Crank Arms",
+		"mainImageWidth": "32%",
+		"image": "images/feature4c.jpg",
+		"imageAlt": "Alloy Pedal Crank Arms",
+		"description": "The LandRider comes with strong, lightweight alloy pedal crank arms, non-slip heavy duty design pedals equipped with safety reflectors for optimal visibility in all conditions."
+	},
+	{
+		"title": "Quick Release ",
+		"mainImage": "images/feature5d.jpg",
+		"mainImageAlt": "Tire Quick Release ",
+		"mainImageWidth": "32%",
+		"image": "images/feature5c.jpg",
+		"imageAlt": "Tire Quick Release ",
+		"description": "The front wheel of the LandRider utilizes a convenient quick release system for fast and easy storage in a closet or basement and for loading into your car."
+	}
+]

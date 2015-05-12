@@ -1,4 +1,4 @@
-(function() { // javascript is wrapped in a closure (good habit.)
+(function() { // javascript is wrapped in a closure.
 	var app = angular.module('lrStore', [ ]);
 	
 	app.controller('StoreController', ['$http', '$scope', '$timeout', function($http, $scope, $timeout) {
@@ -11,6 +11,13 @@
 				store.products = data;
 		});	
 		
+		// Import features from json file:
+		store.features = [];
+		$http.get('features.json').
+			success(function(data){
+				store.features = data;
+				console.log(store.features);
+		});	
 		// Initialize product page variables:
 		$scope.myQty = 1;
 		$scope.mySize;
