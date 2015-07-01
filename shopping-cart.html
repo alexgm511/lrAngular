@@ -16,7 +16,7 @@
 						</tr>
 						
 						<tr ng-repeat="item in store.invoice.items">
-							<td ng:model="item.img"><img class="img-responsive" src="{{item.img}}"</td>
+							<td ng:model="item.img"><img class="img-responsive" ng-src="{{item.img}}"</td>
 							<td ng:model="item.item">{{item.item}}</td>
 							<td ng:model="item.quantity">{{item.quantity}}</td>
 							<td ng:model="item.price">{{item.price}}</td>

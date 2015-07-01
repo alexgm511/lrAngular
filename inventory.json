@@ -3,8 +3,8 @@
 			"type": 1, 
 			"title": "Man's Deluxe AutoShift", 
 			"description": "The LandRider Deluxe delivers a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame design. Also features a comfort saddle with shock absorbing seat post, 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
-			"image": "images/Deluxe17.jpg", 
-			"smImage": "images/Deluxe17-sm.png", 
+			"image": "Deluxe17.jpg", 
+			"smImage": "Deluxe17-sm.png", 
 			"sizes": [
 				{
 					"sku": "LRD14-F04MF",
@@ -36,8 +36,8 @@
 			"type": 1, 
 			"title": "Woman's Small Deluxe AutoShift", 
 			"description": "With features like a step-thru frame and a wider saddle mounted on a shock absorbing seat post the LandRider Women's Deluxe is truly a comfort bike. Enjoy a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame. Also features 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
-			"image": "images/DeluxeStepThru15.jpg", 
-			"smImage": "images/Deluxe15st-sm.png", 
+			"image": "DeluxeStepThru15.jpg", 
+			"smImage": "Deluxe15st-sm.png", 
 			"sizes": [
 				{
 					"sku": "LRD12-F04WF",
@@ -57,8 +57,8 @@
 			"type": 1, 
 			"title": "Woman's Large Deluxe AutoShift", 
 			"description": "The LandRider Deluxe delivers a comfortable, hassle-free ride with our patented 14 speed AutoShift, a dual suspension system and an upright frame design. Also features a wider comfort saddle with shock absorbing seat post, 2-inch all terrain tires, direct pull linear brakes and a lightweight frame in champagne color.", 
-			"image": "images/Deluxe_W_17.jpg", 
-			"smImage": "images/Deluxe17w-sm.png", 
+			"image": "Deluxe_W_17.jpg", 
+			"smImage": "Deluxe17w-sm.png", 
 			"sizes": [
 				{
 					"sku": "LRD17-F04WF",
@@ -72,8 +72,8 @@
 			"type": 2, 
 			"title": "Rear Bike Rack", 
 			"description": "Our unique fully adjustable mounting system and the champagne color make our aluminum alloy rack specially suited to fit every LandRider model. The 15 in. by 5.25 in. top has a 55 pound load capacity, plus it includes red reflector for the rear of the rack. Add versatility with our customized rack bags - Rack-Top Bag, Pannier and Shopping Bag.", 
-			"image": "images/rearRack.jpg", 
-			"smImage": "images/rearRack-sm.png", 
+			"image": "rearRack.jpg", 
+			"smImage": "rearRack-sm.png", 
 			"sizes": [
 				{
 					"sku": "AC400CH",
@@ -87,8 +87,8 @@
 			"type": 2, 
 			"title": "LandRider Accessory Kit", 
 			"description": "An exceptional bundle of bicycle accessories for our LandRider owners. Each kit includes a water bottle with an alloy holder, a rear safety light, air pump and holder and a halogen front headlight. Batteries included.", 
-			"image": "images/kit-1.jpg", 
-			"smImage": "images/kit-1-sm.png", 
+			"image": "kit-1.jpg", 
+			"smImage": "kit-1-sm.png", 
 			"sizes": [
 				{
 					"sku": "LRACKIT2",
@@ -102,8 +102,8 @@
 			"type": 2, 
 			"title": "Alloy Floor Pump", 
 			"description": "From the world's largest pump manufacturer, we bring you our Alloy Floor Pump. It comes with an easy-to-read top-mounted digital pressure gauge and a dual head to fit Schrader and Presta valves, the two most commonly used types of bicycle tire valves.", 
-			"image": "images/floorPump.jpg", 
-			"smImage": "images/floorPump-sm.png", 
+			"image": "floorPump.jpg", 
+			"smImage": "floorPump-sm.png", 
 			"sizes": [
 				{
 					"sku": "AC600",
@@ -117,8 +117,8 @@
 			"type": 2, 
 			"title": "Cyclo-Computer", 
 			"description": "Our easy to use and install cyclo-computer features seven functions: current speed, total distance, trip distance, average speed, maximum speed, elapsed time and a 12 hour clock.", 
-			"image": "images/cycloComputer.jpg", 
-			"smImage": "images/cycloComputer-sm.png", 
+			"image": "cycloComputer.jpg", 
+			"smImage": "cycloComputer-sm.png", 
 			"sizes": [
 				{
 					"sku": "AC510BK",

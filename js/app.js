@@ -5,11 +5,19 @@
 		var store = this;
 		
 		// Import products from json file:
-		store.products = [];
+	/*	store.products = [];
 		$http.get('inventory.json').
 			success(function(data){
 				store.products = data;
+		});	*/
+
+		// Import products from MySQL Database through PHP file:
+		store.products = [];
+		$http.get('products.php').
+			success(function(data){
+				store.products = data;
 		});	
+
 		
 		// Import features from json file:
 		store.features = [];
@@ -39,6 +47,7 @@
 		// Add item to Store invoice and switch to cart by triggering click event.
 		// Click event is wrapped in $timeout to break out of angularjs $apply:
 		store.addItem = function(model, qty, cost, myImg) {
+			myImg = "images/"+myImg;
 			store.invoice.items.push({
 				img: myImg,
 				item: model,

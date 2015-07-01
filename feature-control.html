@@ -8,14 +8,14 @@
 										<h3 class="panel-title">{{item.title}} <button type="button" class="close" aria-label="Close" ng-click="feature.setItem(-1)"><span class="pull-right" aria-hidden="true">&times;</span></button></h3>
 									</div>
 									<div class="panel-body">
-										<img class="img-responsive" src="{{item.image}}" width="100%" alt="{{item.imageAlt}}">
+										<img class="img-responsive" ng-src="{{item.image}}" width="100%" alt="{{item.imageAlt}}">
 										<p>{{item.description}}</p>
 										</div>
 								</div>
 									
 								<p>Click or tap on one of the sections of the bike to learn about the great features of the LandRider bicycle.</p>
 								<div ng-show="feature.imageShow">
-									<img ng-repeat="item2 in store.features" ng-click="feature.setItem($index)" class="popphoto" src="{{item2.mainImage}}" alt="{{item2.mainImageAlt}}" style="width:{{item2.mainImageWidth}}">
+									<img ng-repeat="item2 in store.features" ng-click="feature.setItem($index)" class="popphoto" ng-src="{{item2.mainImage}}" alt="{{item2.mainImageAlt}}" style="width:{{item2.mainImageWidth}}">
 								</div>
 							</div>
 						</div>
